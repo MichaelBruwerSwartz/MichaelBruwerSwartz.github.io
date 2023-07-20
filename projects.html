@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Michael Swartz - Personal Projects</title>
+</head>
+<body>
+
+<! -- Below is the structure for the navigation panel and hamburger menu. -- >
+
+<header>    
+    <nav class="navbar">
+        <a class="nav-brand" href="index.html"><img src="images/home.png" class="nav-logo"></a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="/index.html#about" class="nav-link">About</a>
+            </li>
+
+            <li class="nav-item">
+                <a href="/index.html#education" class="nav-link">Education</a>
+            </li>  
+            
+            <li class="nav-item">
+                <a href="/index.html#coding" class="nav-link">Coding</a>
+            </li>
+
+        </ul>
+
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+    </nav>
+</header>
+
+<! -- below is the carousel style layout of my projects -->
+
+<div class="row">
+    <div class="header">
+      <h3 class="title">Title</h3>
+      <div class="progress-bar"></div>
+    </div>
+    <div class="container-carousel">
+      <button class="handle left-handle">
+        <div class="text">&#8249;</div>
+      </button>
+      <div class="slider">
+        <div class="project-box">
+          <h1 class="project-box-heading">SOLITAIRE</h1>
+          <img src = "images/solitaire.PNG">
+          <p class="project-box-description">I challenged myself to create solitaire in 6 hours as an excercise to imporve my ability to code under some sort of pressure. I ended up finishing in just under 5 hours. I coded in python as that is what my computer science course is given in and used the pygame library</p>
+        </div>
+
+        <div class="project-box">
+          <h1 class="project-box-heading">My 1st year, 1st semester project</h1>
+          <img src = "images/comsciSemester1.PNG">
+          <p class="project-box-description">This was my first semester computer science project at the university of Stellenbosch. It was based on a card game known as AirRace where the goal is to collect 10 suitcases before your opponent does while keeping a positive balance. Other functionalities where added by the inclusion of <i>obstacle disks</i> such as moving your oppinents airport or gaining balance based on current game conditions. My final score was 100% and I achieved full marks for the "AI" auto solver. Feel free to contact me for more information about the project.</p>
+        </div>
+        
+        <div class="project-box">
+          <h1 class="project-box-heading">Web Development project</h1>
+          <img src = "images/webDevProject.PNG">
+          <p class="project-box-description">In 2022 I attended a web development course given by High-School, our project was to create a webpage to showcase ourselves and our coding ability. We learnt feautures of html, css and basic javascript.</p>
+        </div>
+
+        <div class="project-box">
+          <h1 class="project-box-heading">EYES</h1>
+          <img src = "images/eyes.png">
+          <p class="project-box-description">Made a program that follows your mouse cursor. This was my first use pf the pygame library.</p>
+        </div>
+
+        <div class="project-box">
+          <h1 class="project-box-heading">BLACKJACK</h1>
+          <img src = "images/blackjack.PNG">
+          <p class="project-box-description">A basic blackjack game where you play against the computer, coded in python using the stdrandom and stddraw libraries</p>
+        </div>
+
+        <div class="project-box">
+          <h1 class="project-box-heading">POKEMON CLONE</h1>
+          <img src = "images/pokemon.png">
+          <p class="project-box-description">I created a POKEMON clone using vanilla Javascript and some external libraries. I used assets that i found on itch.io and created the map using an application called tiled. The game is split into 2 main parts, the open world section where yo can wander around and the fight section where you can fight another 'POKEMON'.</p>
+        </div>
+
+        <div class="project-box">
+          <h1 class="project-box-heading">SNAKE</h1>
+          <img src = "images/snake.PNG">
+          <p class="project-box-description">I coded a basic snake game in Javascript making using of the HTML canvas. This was my first Javascript project.</p>
+        </div>
+
+        <div class="project-box">
+          <h1 class="project-box-heading">PORTFOLIO</h1>
+          <img src = "images/portfolio.PNG">
+          <p class="project-box-description">You are currently viewing my portfolio, what do you think? I created this portfolio using JavaScript, HTML and CSS.</p>
+        </div>
+      </div>
+      <button class="handle right-handle">
+        <div class="text">&#8250;</div>
+      </button>
+    </div>
+  </div> 
+
+  <script src="index.js"></script>
+</body>
+</html>
