@@ -1,0 +1,140 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background: radial-gradient(circle at 50% 50%, rgba(88, 166, 255, 0.05) 0%, transparent 50%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  padding: 2rem;
+}
+
+.hero-code {
+  text-align: left;
+  margin: 0 auto 2rem;
+  font-size: 1.1rem;
+  max-width: 700px;
+  background: rgba(22, 27, 34, 0.8);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.2rem;
+  background: var(--accent-green);
+  margin-left: 2px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-secondary {
+  border-color: var(--accent-purple);
+  color: var(--accent-purple);
+}
+
+.btn-secondary::before {
+  background: var(--accent-purple);
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+.mouse {
+  width: 25px;
+  height: 40px;
+  border: 2px solid var(--accent-blue);
+  border-radius: 15px;
+  margin: 0 auto 0.5rem;
+  position: relative;
+}
+
+.wheel {
+  width: 3px;
+  height: 8px;
+  background: var(--accent-blue);
+  border-radius: 2px;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll 2s infinite;
+}
+
+@keyframes scroll {
+  0% { top: 8px; opacity: 1; }
+  50% { top: 20px; opacity: 0; }
+  100% { top: 8px; opacity: 0; }
+}
+
+.hero-bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: rgba(88, 166, 255, 0.03);
+  white-space: nowrap;
+  z-index: 0;
+  pointer-events: none;
+  line-height: 1.8;
+}
+
+.bg-text-line {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero-code {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+
+  .hero-bg-text {
+    font-size: 1.5rem;
+  }
+
+  .indent-1 .line-number ~ * {
+    padding-left: 1rem !important;
+  }
+  
+  .indent-2 .line-number ~ * {
+    padding-left: 2rem !important;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,155 @@
+.terminal-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Fira Code', monospace;
+}
+
+.terminal-header {
+  background: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border-color);
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.term-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.term-btn.close {
+  background: #ff5f56;
+}
+
+.term-btn.minimize {
+  background: #ffbd2e;
+  cursor: pointer;
+}
+
+.term-btn.minimize:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  box-shadow: 0 0 8px rgba(255, 189, 46, 0.6);
+}
+
+.term-btn.minimize::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.term-btn.maximize {
+  background: #27c93f;
+}
+
+.term-btn:hover {
+  opacity: 0.7;
+}
+
+.terminal-title {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.terminal-body {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.terminal-line {
+  margin-bottom: 0.3rem;
+  word-wrap: break-word;
+}
+
+.terminal-line.input {
+  color: var(--text-primary);
+  margin-top: 0.5rem;
+}
+
+.terminal-line.output {
+  color: var(--text-primary);
+}
+
+.terminal-line.error {
+  color: var(--accent-red);
+}
+
+.terminal-input-line {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.prompt {
+  color: var(--accent-green);
+  margin-right: 0.5rem;
+  flex-shrink: 0;
+}
+
+.terminal-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95rem;
+  caret-color: var(--accent-green);
+}
+
+/* Scrollbar */
+.terminal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+.terminal-body::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-green);
+}
+
+@media (max-width: 768px) {
+  .terminal-body {
+    font-size: 0.85rem;
+    padding: 1rem;
+  }
+
+  .terminal-input {
+    font-size: 0.85rem;
+  }
+
+  .prompt {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,147 @@
+.about {
+  background: linear-gradient(135deg, rgba(188, 140, 255, 0.03) 0%, transparent 50%);
+  position: relative;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.about-image-container {
+  position: sticky;
+  top: 100px;
+}
+
+.code-frame {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px var(--shadow);
+}
+
+.frame-dots {
+  background: var(--bg-tertiary);
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ff5f56; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green { background: #27c93f; }
+
+.image-wrapper {
+  position: relative;
+  padding: 1.5rem;
+}
+
+.profile-image {
+  width: 70%;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 8px;
+  display: block;
+  filter: grayscale(20%);
+  transition: all 0.3s ease;
+}
+
+.profile-image:hover {
+  filter: grayscale(0%);
+  transform: scale(1.02);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 2.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.code-frame:hover .image-overlay {
+  opacity: 1;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-green);
+  box-shadow: 0 10px 30px rgba(63, 185, 80, 0.1);
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--accent-green);
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image-container {
+    position: relative;
+    top: 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

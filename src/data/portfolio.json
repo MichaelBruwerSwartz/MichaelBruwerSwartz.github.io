@@ -1,0 +1,277 @@
+{
+  "personal": {
+    "name": "Michael Swartz",
+    "age": 21,
+    "location": "Stellenbosch, South Africa",
+    "email": "michael.bruwer.swartz@gmail.com",
+    "github": "MichaelBruwerSwartz",
+    "role": "I'm an aspiring full stack developer",
+    "codingSince": 2020,
+    "graduationYear": 2025,
+    "profileImage": "/images/CoverPhoto.jpeg",
+    "description": "Passionate about programming, mathematics, and problem-solving. Motivated and hard-working team player with strong understanding of coding principles and software development."
+  },
+  "education": [
+    {
+      "id": "stellenberg",
+      "institution": "Stellenberg High School",
+      "degree": "NSC Certificate",
+      "year": "2019 - 2022",
+      "description": "88.5% average with 7 distinctions. IEB certificate with distinction in Further Studies Mathematics.",
+      "image": "/images/stellenberg.png",
+      "color": "#9B59B6",
+      "details": "Developed strong foundation in mathematics and science that prepared me for university-level computer science."
+    },
+    {
+      "id": "stellenbosch",
+      "institution": "University of Stellenbosch",
+      "degree": "BSc Computer Science",
+      "year": "2023 - 2025",
+      "description": "Currently in my final year, planning to pursue Honours in Computer Science after completing undergraduate studies.",
+      "image": "/images/stellenbosch.png",
+      "color": "#4A90E2",
+      "details": "A leading research university in South Africa, known for excellence in science, technology, and innovation."
+    },
+    {
+      "id": "helshoogte-dux",
+      "institution": "Helshoogte Residence",
+      "degree": "Dux Student Award",
+      "year": "2023",
+      "description": "Received the Helshoogte Dux Student award for highest academic achievement in the residence.",
+      "image": "/images/helshoogteDux.jpg",
+      "color": "#3FB950",
+      "details": "Recognition of dedication to academic excellence. First year university achievement."
+    },
+    {
+      "id": "helshoogte-dux",
+      "institution": "Helshoogte Residence",
+      "degree": "Dux Student Award",
+      "year": "2024",
+      "description": "Received the Helshoogte Dux Student award for highest academic achievement in the residence.",
+      "image": "/images/helshoogte2024.jpg",
+      "color": "#F39C12",
+      "details": "Recognition of dedication to academic excellence. Second year university achievement."
+    },
+    {
+      "id": "Top-2nd-Year-Computer-Science",
+      "institution": "University of Stellenbosch",
+      "degree": "Top 2nd Year Computer Science Award",
+      "year": "2024",
+      "description": "Received the Top 2nd Year Computer Science award for being the top achieving 2nd year Computer Science student.",
+      "image": "/images/StellenboschComSci.jpeg",
+      "color": "#E74C3C",
+      "details": "Recognition of dedication to academic excellence. Second year university achievement."
+    },
+    {
+      "id": "helshoogte-final-year-academic-award",
+      "institution": "Helshoogte Residence",
+      "degree": "Final Year Academic Award",
+      "year": "2025",
+      "description": "Received the Helshoogte final year academic award for highest academic final year academic achievement in the residence.",
+      "image": "/images/helshoogte2025.jpg",
+      "color": "#1ABC9C",
+      "details": "Recognition of dedication to academic excellence. Final year university achievement."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Python",
+      "icon": "🐍",
+      "years": 4,
+      "projects": 7,
+      "color": "#3776AB"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "⚡",
+      "years": 5,
+      "projects": 12,
+      "color": "#F7DF1E"
+    },
+    {
+      "name": "React",
+      "icon": "⚛️",
+      "years": 4,
+      "projects": 3,
+      "color": "#61DAFB"
+    },
+    {
+      "name": "Java",
+      "icon": "☕",
+      "years": 4,
+      "projects": 5,
+      "color": "#007396"
+    },
+    {
+      "name": "HTML/CSS",
+      "icon": "🎨",
+      "years": 5,
+      "projects": 12,
+      "color": "#E34F26"
+    },
+    {
+      "name": "C",
+      "icon": "🔧",
+      "years": 2,
+      "projects": 2,
+      "color": "#A8B9CC"
+    },
+    {
+      "name": "x86 Assembly",
+      "icon": "⚙️",
+      "years": 1,
+      "projects": 5,
+      "color": "#6E4C13"
+    }
+  ],
+  "projects": [
+    {
+      "id": "solitaire",
+      "title": "Solitaire",
+      "description": "Created a full-featured solitaire game in under 5 hours using Python and Pygame. Challenge accepted!",
+      "tech": ["Python", "Pygame"],
+      "image": "/images/solitaire.PNG",
+      "category": "game",
+      "lines": 650,
+      "time": "5 hours",
+      "details": "Challenge: Created as a coding speed challenge. Features: Full solitaire gameplay with drag-and-drop. Learning: Rapid development, game state management."
+    },
+    {
+      "id": "airrace",
+      "title": "AirRace Game",
+      "description": "First semester CS project - a strategic card game with AI solver. Achieved 120% including full marks for the AI implementation.",
+      "tech": ["Python", "AI Algorithms"],
+      "image": "/images/comsciSemester1.PNG",
+      "category": "academic",
+      "lines": 1200,
+      "time": "2 weeks",
+      "details": "Grade: 120% including full marks for AI. Features: Strategic card game with intelligent AI opponent. Learning: Algorithm design, AI implementation, game theory."
+    },
+    {
+      "id": "pokemon",
+      "title": "Pokemon Clone",
+      "description": "Built using vanilla JavaScript with open-world exploration and battle mechanics. Map created with Tiled.",
+      "tech": ["JavaScript", "Canvas API"],
+      "image": "/images/pokemon.png",
+      "category": "game",
+      "lines": 2500,
+      "time": "3 weeks",
+      "details": "Features: Open-world exploration, battle mechanics, custom sprites. Tools: Tiled for map creation, Canvas API for rendering. Learning: Game loop, collision detection, state management."
+    },
+    {
+      "id": "portfolio-web",
+      "title": "Web Development Portfolio",
+      "description": "Learned HTML, CSS, and JavaScript fundamentals while building this showcase of my skills and projects.",
+      "tech": ["HTML", "CSS", "JavaScript"],
+      "image": "/images/webDevProject.PNG",
+      "category": "web",
+      "lines": 600,
+      "time": "1 week",
+      "details": "Features: Responsive design, smooth animations, project gallery. Learning: Web standards, CSS layouts, DOM manipulation."
+    },
+    {
+      "id": "blackjack",
+      "title": "Blackjack Game",
+      "description": "Classic card game implementation with betting system and dealer AI.",
+      "tech": ["Python"],
+      "image": "/images/blackjack.PNG",
+      "category": "game",
+      "lines": 400,
+      "time": "1 day",
+      "details": "Libraries: stdrandom, stddraw. Features: Betting system, dealer AI, card counting practice mode. Learning: Probability, game logic, user interface design."
+    },
+    {
+      "id": "snake",
+      "title": "Snake Game",
+      "description": "First JavaScript project using HTML canvas with classic snake gameplay.",
+      "tech": ["JavaScript"],
+      "image": "/images/snake.PNG",
+      "category": "game",
+      "lines": 300,
+      "time": "1 day",
+      "details": "Features: Classic snake gameplay, score tracking, increasing difficulty. Learning: Canvas API, game timing, keyboard input handling."
+    },
+    {
+      "id": "eyes-tracker",
+      "title": "Eyes Tracker",
+      "description": "Interactive program with eyes following mouse cursor. First PyGame exploration.",
+      "tech": ["Python", "Pygame"],
+      "image": "/images/eyes.png",
+      "category": "interactive",
+      "lines": 200,
+      "time": "1 hour",
+      "details": "Features: Realistic eye movement, smooth animations. Learning: First PyGame exploration, trigonometry, vector math."
+    },
+    {
+      "id": "terminal-portfolio",
+      "title": "Terminal Portfolio",
+      "description": "Modern portfolio with terminal interface and dual visual/terminal modes.",
+      "tech": ["React", "JavaScript"],
+      "image": "/images/backgroundCode.avif",
+      "category": "web",
+      "lines": 3000,
+      "time": "Ongoing",
+      "details": "This site! Features: Unix-like commands, dual visual/terminal modes, smooth animations. Learning: React hooks, state management, creative UI design."
+    },
+    {
+      "id": "binary-sort-assembly",
+      "title": "Binary Sort Algorithm",
+      "description": "Full binary sort implementation in 32-bit x86 Assembly (NASM) with C interface.",
+      "tech": ["x86 Assembly", "C", "NASM"],
+      "image": "/images/placeholder.png",
+      "category": "academic",
+      "lines": 150,
+      "time": "1 week",
+      "details": "Implementation: Wrote complete binary sort in x86 Assembly. Testing: Used C interface with GCC multilib for validation. Focus: Struct-based data handling and low-level optimization techniques."
+    },
+    {
+      "id": "multi-room-chat",
+      "title": "Multi-Room Chat Application",
+      "description": "Java chat app with multiple rooms, real-time calling, encryption, and built-in torrenting.",
+      "tech": ["Java", "JavaFX", "Multithreading", "Torrenting", "Networking"],
+      "image": "/images/placeholder.png",
+      "category": "web",
+      "lines": 4000,
+      "time": "3 weeks",
+      "details": "Features: Multiple chat rooms, live message broadcasting, real-time voice calling, end-to-end encryption, integrated torrenting system for file sharing. Tech: JavaFX GUI, multithreading for concurrent users. Learning: Network programming, encryption, P2P protocols."
+    },
+    {
+      "id": "laser-tag-game",
+      "title": "Laser Tag Game",
+      "description": "Mobile laser tag game using computer vision for player detection and hit tracking.",
+      "tech": ["JavaScript", "Computer Vision", "Networking", "Internship"],
+      "image": "/images/placeholder.png",
+      "category": "game",
+      "lines": 1800,
+      "time": "1 week",
+      "details": "Features: Mobile-based gameplay, camera feed integration, real-time player detection, hit detection and tagging system. Tech: Computer vision algorithms, smartphone camera API. Learning: Mobile development, computer vision, real-time processing."
+    },
+    {
+      "id": "pose-detection-app",
+      "title": "Pose Detection React App",
+      "description": "Browser-based human pose detection app using TensorFlow.js with cross-browser compatibility.",
+      "tech": ["React", "TensorFlow.js", "Machine Learning"],
+      "image": "/images/placeholder.png",
+      "category": "web",
+      "lines": 600,
+      "time": "3 days",
+      "details": "Features: Real-time human pose detection in browser, cross-platform compatibility. Challenges: Debugged Safari-specific compatibility issues. Tech: TensorFlow.js for ML, React for UI. Learning: Machine learning integration, browser APIs, performance optimization."
+    },
+    {
+      "id": "pdf-automation-suite",
+      "title": "PDF Automation Suite (CS344 - Praelexis)",
+      "description": "Suite of Python tools for automated PDF form detection, filling, and response placement.",
+      "tech": ["Python", "TTS", "PDF Processing", "LLM"],
+      "image": "/images/placeholder.png",
+      "category": "academic",
+      "lines": 3500,
+      "time": "10 weeks",
+      "details": "Company Project: Developed for Praelexis in CS344. Components: 1) Input Field Detection - Detects underlined/blank fields and prompts for input, auto-saves to /Filled/ directory. 2) PDF Response Writer - Precisely places typed responses with maintained text alignment, font, and spacing. 3) Form Field Locator - OpenCV-based visual detection of underlines and input zones with bounding box extraction. Learning: PDF manipulation, computer vision, automation workflows."
+    }
+  ],
+  "stats": {
+    "yearsCoding": "5+",
+    "projectsBuilt": "20+",
+    "languages": "8+"
+  }
+}

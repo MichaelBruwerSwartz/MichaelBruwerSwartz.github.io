@@ -1,0 +1,145 @@
+/* Compiler Loading Screen */
+.compiler-loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loading-content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.ascii-art {
+  color: var(--accent-green);
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  margin: 0 0 2rem 0;
+  text-shadow: 0 0 10px rgba(63, 185, 80, 0.5);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(63, 185, 80, 0.5);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(63, 185, 80, 0.8), 0 0 30px rgba(63, 185, 80, 0.4);
+  }
+}
+
+.compilation-output {
+  font-size: 0.9rem;
+  text-align: left;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.compile-line {
+  margin: 0.5rem 0;
+  color: var(--text-secondary);
+  opacity: 0;
+}
+
+.prompt {
+  color: var(--accent-green);
+  margin-right: 0.5rem;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.3s;
+}
+
+.delay-2 {
+  animation-delay: 0.6s;
+}
+
+.delay-3 {
+  animation-delay: 0.9s;
+}
+
+.success {
+  color: var(--accent-green);
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.App.terminal-view {
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Terminal Icon */
+.terminal-icon {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  width: 60px;
+  height: 60px;
+  background: var(--accent-green);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(63, 185, 80, 0.3);
+  transition: all 0.3s ease;
+}
+
+.terminal-icon:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 30px rgba(63, 185, 80, 0.5);
+  background: var(--text-primary);
+}
+
+.terminal-icon svg {
+  width: 30px;
+  height: 30px;
+  color: var(--bg-primary);
+  transition: color 0.3s ease;
+}
+
+.terminal-icon:hover svg {
+  color: var(--accent-green);
+}
+
+/* Smooth transitions */
+.terminal-icon:active {
+  transform: translateY(-2px) scale(1);
+}
+
+@media (max-width: 768px) {
+  .terminal-icon {
+    width: 50px;
+    height: 50px;
+    bottom: 1.5rem;
+    left: 1.5rem;
+  }
+
+  .terminal-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+}
