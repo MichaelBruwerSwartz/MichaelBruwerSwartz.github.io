@@ -2,6 +2,11 @@
   background: linear-gradient(225deg, rgba(63, 185, 80, 0.03) 0%, transparent 50%);
 }
 
+.skills .container {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -110,6 +115,11 @@
 }
 
 @media (max-width: 768px) {
+  .skills .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
