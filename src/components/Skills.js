@@ -90,7 +90,7 @@ const Skills = () => {
           </div>
           <div className="code-line indent-1">
             <span className="line-number">4</span>
-            <span>backend: [<span className="code-string">'Python'</span>, <span className="code-string">'Java'</span>],</span>
+            <span>backend: [<span className="code-string">'Python'</span>, <span className="code-string">'Java'</span>, <span className="code-string">'C'</span>],</span>
           </div>
           <div className="code-line indent-1">
             <span className="line-number">5</span>

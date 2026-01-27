@@ -84,12 +84,6 @@ const Contact = () => {
           </div>
 
           <div className="footer">
-            <p className="code-comment">
-              {'// Built with React by ' + personal.name}
-            </p>
-            <p className="code-comment">
-              {'// © 2025 - Compiling dreams into reality'}
-            </p>
             <p className="terminal-hint">
               <span className="hint-icon">💡</span>
               Press <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> to open terminal mode
