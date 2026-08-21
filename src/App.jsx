@@ -2,21 +2,24 @@ import data from './data/portfolio.json';
 
 const { personal, research, interests, projects, earlier, education, awards, skills } = data;
 
-function Entry({ title, meta, metaHref, tech, children }) {
+function Entry({ title, meta, metaHref, tech, logo, children }) {
   return (
-    <div className="entry">
-      <div className="entry-head">
-        <span className="entry-title">{title}</span>
-        {meta && (
-          <span className="entry-meta">
-            {metaHref
-              ? <a href={metaHref} target="_blank" rel="noopener noreferrer">{meta}</a>
-              : meta}
-          </span>
-        )}
+    <div className={logo ? 'entry entry-logo-row' : 'entry'}>
+      {logo && <img className="entry-logo" src={logo} alt="" aria-hidden="true" />}
+      <div className="entry-body">
+        <div className="entry-head">
+          <span className="entry-title">{title}</span>
+          {meta && (
+            <span className="entry-meta">
+              {metaHref
+                ? <a href={metaHref} target="_blank" rel="noopener noreferrer">{meta}</a>
+                : meta}
+            </span>
+          )}
+        </div>
+        {children && <p>{children}</p>}
+        {tech && <div className="tech">{tech.join(' · ')}</div>}
       </div>
-      {children && <p>{children}</p>}
-      {tech && <div className="tech">{tech.join(' · ')}</div>}
     </div>
   );
 }
@@ -57,7 +60,7 @@ export default function App() {
       <section>
         <h2>Education</h2>
         {education.map(e => (
-          <Entry key={e.id} title={e.degree} meta={e.year}>{e.institution}</Entry>
+          <Entry key={e.id} title={e.degree} meta={e.year} logo={e.logo}>{e.institution}</Entry>
         ))}
       </section>
 

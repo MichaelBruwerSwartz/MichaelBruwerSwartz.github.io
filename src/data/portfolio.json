@@ -157,19 +157,22 @@
       "id": "stellenbosch-honours",
       "degree": "BSc Honours, Computer Science",
       "institution": "Stellenbosch University",
-      "year": "2026"
+      "year": "2026",
+      "logo": "/images/stellenbosch.png"
     },
     {
       "id": "stellenbosch",
       "degree": "BSc Computer Science",
       "institution": "Stellenbosch University",
-      "year": "2023–25"
+      "year": "2023–25",
+      "logo": "/images/stellenbosch.png"
     },
     {
       "id": "stellenberg",
       "degree": "NSC, IEB",
       "institution": "Stellenberg High School — 88.5% average, seven distinctions",
-      "year": "2019–22"
+      "year": "2019–22",
+      "logo": "/images/stellenberg.png"
     }
   ],
   "awards": [
