@@ -1,0 +1,108 @@
+:root {
+  --bg: #fafaf9;
+  --text: #18181b;
+  --muted: #71717a;
+  --rule: #e4e4e7;
+  --link: #2563eb;
+  --measure: 40rem;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, -apple-system, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 6rem 1.5rem 8rem;
+}
+
+@media (max-width: 640px) {
+  main { padding: 3.5rem 1.25rem 5rem; }
+  body { font-size: 16px; }
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; text-underline-offset: 2px; }
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.intro p { margin: 0.35rem 0 0; }
+.intro .role { color: var(--muted); }
+.intro .bio { margin-top: 1.5rem; max-width: 34rem; }
+
+section { margin-top: 4rem; }
+
+h2 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+.entry { margin-bottom: 1.75rem; }
+.entry:last-child { margin-bottom: 0; }
+
+.entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1.5rem;
+}
+
+.entry-title { font-weight: 500; }
+
+.entry-meta {
+  color: var(--muted);
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.entry p {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
+  max-width: 34rem;
+}
+
+.tech {
+  margin-top: 0.3rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.skills-list {
+  margin: 0;
+  color: var(--muted);
+}
+
+.contact { margin-top: 4rem; }
+.contact ul { list-style: none; margin: 0; padding: 0; }
+.contact li { margin-bottom: 0.3rem; }
+
+.intro .bio + .bio { margin-top: 1rem; }
+
+.earlier {
+  margin: 2rem 0 0;
+  color: var(--muted);
+  max-width: 34rem;
+}

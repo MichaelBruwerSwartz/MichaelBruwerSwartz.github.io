@@ -1,277 +1,224 @@
 {
   "personal": {
     "name": "Michael Swartz",
-    "age": 21,
+    "role": "CS Honours student",
     "location": "Stellenbosch, South Africa",
     "email": "michael.bruwer.swartz@gmail.com",
     "github": "MichaelBruwerSwartz",
-    "role": "I'm an aspiring full stack developer",
-    "codingSince": 2020,
-    "graduationYear": 2025,
-    "profileImage": "/images/CoverPhoto.jpeg",
-    "description": "Passionate about programming, mathematics, and problem-solving. Motivated and hard-working team player with strong understanding of coding principles and software development."
+    "bio": [
+      "I'm doing my Honours in Computer Science at Stellenbosch. My research is on Text-to-SQL: how well quantised open-source models, from 1.5B to 32B parameters, translate a question into SQL, and what it actually costs to make them correct themselves.",
+      "Most of what I build sits close to that — running models locally, agentic tooling, and the infrastructure to keep both alive on one machine. I like the parts where a model has to work out that it was wrong."
+    ]
   },
-  "education": [
+  "research": [
     {
-      "id": "stellenberg",
-      "institution": "Stellenberg High School",
-      "degree": "NSC Certificate",
-      "year": "2019 - 2022",
-      "description": "88.5% average with 7 distinctions. IEB certificate with distinction in Further Studies Mathematics.",
-      "image": "/images/stellenberg.png",
-      "color": "#9B59B6",
-      "details": "Developed strong foundation in mathematics and science that prepared me for university-level computer science."
+      "id": "text-to-sql",
+      "title": "Error-aware Text-to-SQL for low-resource LLMs",
+      "meta": "Honours project",
+      "description": "A benchmarking pipeline that evaluates open-source models from 1.5B to 32B parameters on BIRD, sorts their failures into syntax, schema, semantic and logic errors, and feeds them back for iterative self-correction. Correction runs as a chain — deterministic parsing and schema checks first, an LLM only as a last resort, capped at three rounds per query. I introduced Mean Correction Iterations to measure how much correction effort each point of accuracy costs. The bottleneck turned out to be detection rather than repair: without a reference answer, the classifier misses about 41% of semantic errors.",
+      "tech": [
+        "Python",
+        "Ollama",
+        "BIRD",
+        "ROCm",
+        "PBS Pro"
+      ]
     },
     {
-      "id": "stellenbosch",
-      "institution": "University of Stellenbosch",
-      "degree": "BSc Computer Science",
-      "year": "2023 - 2025",
-      "description": "Currently in my final year, planning to pursue Honours in Computer Science after completing undergraduate studies.",
-      "image": "/images/stellenbosch.png",
-      "color": "#4A90E2",
-      "details": "A leading research university in South Africa, known for excellence in science, technology, and innovation."
-    },
-    {
-      "id": "helshoogte-dux",
-      "institution": "Helshoogte Residence",
-      "degree": "Dux Student Award",
-      "year": "2023",
-      "description": "Received the Helshoogte Dux Student award for highest academic achievement in the residence.",
-      "image": "/images/helshoogteDux.jpg",
-      "color": "#3FB950",
-      "details": "Recognition of dedication to academic excellence. First year university achievement."
-    },
-    {
-      "id": "helshoogte-dux",
-      "institution": "Helshoogte Residence",
-      "degree": "Dux Student Award",
-      "year": "2024",
-      "description": "Received the Helshoogte Dux Student award for highest academic achievement in the residence.",
-      "image": "/images/helshoogte2024.jpg",
-      "color": "#F39C12",
-      "details": "Recognition of dedication to academic excellence. Second year university achievement."
-    },
-    {
-      "id": "Top-2nd-Year-Computer-Science",
-      "institution": "University of Stellenbosch",
-      "degree": "Top 2nd Year Computer Science Award",
-      "year": "2024",
-      "description": "Received the Top 2nd Year Computer Science award for being the top achieving 2nd year Computer Science student.",
-      "image": "/images/StellenboschComSci.jpeg",
-      "color": "#E74C3C",
-      "details": "Recognition of dedication to academic excellence. Second year university achievement."
-    },
-    {
-      "id": "helshoogte-final-year-academic-award",
-      "institution": "Helshoogte Residence",
-      "degree": "Final Year Academic Award",
-      "year": "2025",
-      "description": "Received the Helshoogte final year academic award for highest academic final year academic achievement in the residence.",
-      "image": "/images/helshoogte2025.jpg",
-      "color": "#1ABC9C",
-      "details": "Recognition of dedication to academic excellence. Final year university achievement."
+      "id": "masters",
+      "title": "Next",
+      "description": "Applying for Master's funding to work on that detection bottleneck: fine-tuning models to diagnose their own output, finding confidence signals that don't need a reference answer, and turning MCI into something useful at deployment time."
     }
   ],
-  "skills": [
-    {
-      "name": "Python",
-      "icon": "🐍",
-      "years": 4,
-      "projects": 7,
-      "color": "#3776AB"
-    },
-    {
-      "name": "JavaScript",
-      "icon": "⚡",
-      "years": 5,
-      "projects": 12,
-      "color": "#F7DF1E"
-    },
-    {
-      "name": "React",
-      "icon": "⚛️",
-      "years": 4,
-      "projects": 3,
-      "color": "#61DAFB"
-    },
-    {
-      "name": "Java",
-      "icon": "☕",
-      "years": 4,
-      "projects": 5,
-      "color": "#007396"
-    },
-    {
-      "name": "HTML/CSS",
-      "icon": "🎨",
-      "years": 5,
-      "projects": 12,
-      "color": "#E34F26"
-    },
-    {
-      "name": "C",
-      "icon": "🔧",
-      "years": 2,
-      "projects": 2,
-      "color": "#A8B9CC"
-    },
-    {
-      "name": "x86 Assembly",
-      "icon": "⚙️",
-      "years": 1,
-      "projects": 5,
-      "color": "#6E4C13"
-    }
+  "interests": [
+    "Computer vision",
+    "Automated AI systems",
+    "Cognitive robotics"
   ],
   "projects": [
     {
-      "id": "solitaire",
-      "title": "Solitaire",
-      "description": "Created a full-featured solitaire game in under 5 hours using Python and Pygame. Challenge accepted!",
-      "tech": ["Python", "Pygame"],
-      "image": "/images/solitaire.PNG",
-      "category": "game",
-      "lines": 650,
-      "time": "5 hours",
-      "details": "Challenge: Created as a coding speed challenge. Features: Full solitaire gameplay with drag-and-drop. Learning: Rapid development, game state management."
+      "id": "lengau-skill",
+      "title": "Claude Code skill for the Lengau cluster",
+      "description": "A skill that Claude Code works from to run my experiments on the CHPC's Lengau cluster — the VPN, PBS Pro jobs, a CPU-only Ollama built from source, and handoff notes that pass state between sessions on different machines. Needed because nothing about the cluster is standard: the compute nodes have no outbound internet and everything runs inside Singularity containers.",
+      "tech": [
+        "Claude Code",
+        "PBS Pro",
+        "Singularity",
+        "Ollama",
+        "WireGuard"
+      ]
     },
     {
-      "id": "airrace",
-      "title": "AirRace Game",
-      "description": "First semester CS project - a strategic card game with AI solver. Achieved 120% including full marks for the AI implementation.",
-      "tech": ["Python", "AI Algorithms"],
-      "image": "/images/comsciSemester1.PNG",
-      "category": "academic",
-      "lines": 1200,
-      "time": "2 weeks",
-      "details": "Grade: 120% including full marks for AI. Features: Strategic card game with intelligent AI opponent. Learning: Algorithm design, AI implementation, game theory."
+      "id": "table-soccer",
+      "title": "Multiplayer table soccer",
+      "meta": "BBD vacation week",
+      "description": "Foosball in the browser, built in a week. Vanilla JS and Socket.IO with no frameworks, which is what made the real-time state — powerup timers, spectators joining mid-game — the hard part. Deployed to Cloudflare Workers through GitHub Actions.",
+      "tech": [
+        "JavaScript",
+        "Socket.IO",
+        "Cloudflare Workers"
+      ],
+      "metaHref": "https://www.bbdsoftware.com"
     },
     {
-      "id": "pokemon",
-      "title": "Pokemon Clone",
-      "description": "Built using vanilla JavaScript with open-world exploration and battle mechanics. Map created with Tiled.",
-      "tech": ["JavaScript", "Canvas API"],
-      "image": "/images/pokemon.png",
-      "category": "game",
-      "lines": 2500,
-      "time": "3 weeks",
-      "details": "Features: Open-world exploration, battle mechanics, custom sprites. Tools: Tiled for map creation, Canvas API for rendering. Learning: Game loop, collision detection, state management."
-    },
-    {
-      "id": "portfolio-web",
-      "title": "Web Development Portfolio",
-      "description": "Learned HTML, CSS, and JavaScript fundamentals while building this showcase of my skills and projects.",
-      "tech": ["HTML", "CSS", "JavaScript"],
-      "image": "/images/webDevProject.PNG",
-      "category": "web",
-      "lines": 600,
-      "time": "1 week",
-      "details": "Features: Responsive design, smooth animations, project gallery. Learning: Web standards, CSS layouts, DOM manipulation."
-    },
-    {
-      "id": "blackjack",
-      "title": "Blackjack Game",
-      "description": "Classic card game implementation with betting system and dealer AI.",
-      "tech": ["Python"],
-      "image": "/images/blackjack.PNG",
-      "category": "game",
-      "lines": 400,
-      "time": "1 day",
-      "details": "Libraries: stdrandom, stddraw. Features: Betting system, dealer AI, card counting practice mode. Learning: Probability, game logic, user interface design."
-    },
-    {
-      "id": "snake",
-      "title": "Snake Game",
-      "description": "First JavaScript project using HTML canvas with classic snake gameplay.",
-      "tech": ["JavaScript"],
-      "image": "/images/snake.PNG",
-      "category": "game",
-      "lines": 300,
-      "time": "1 day",
-      "details": "Features: Classic snake gameplay, score tracking, increasing difficulty. Learning: Canvas API, game timing, keyboard input handling."
-    },
-    {
-      "id": "eyes-tracker",
-      "title": "Eyes Tracker",
-      "description": "Interactive program with eyes following mouse cursor. First PyGame exploration.",
-      "tech": ["Python", "Pygame"],
-      "image": "/images/eyes.png",
-      "category": "interactive",
-      "lines": 200,
-      "time": "1 hour",
-      "details": "Features: Realistic eye movement, smooth animations. Learning: First PyGame exploration, trigonometry, vector math."
-    },
-    {
-      "id": "terminal-portfolio",
-      "title": "Terminal Portfolio",
-      "description": "Modern portfolio with terminal interface and dual visual/terminal modes.",
-      "tech": ["React", "JavaScript"],
-      "image": "/images/backgroundCode.avif",
-      "category": "web",
-      "lines": 3000,
-      "time": "Ongoing",
-      "details": "This site! Features: Unix-like commands, dual visual/terminal modes, smooth animations. Learning: React hooks, state management, creative UI design."
-    },
-    {
-      "id": "binary-sort-assembly",
-      "title": "Binary Sort Algorithm",
-      "description": "Full binary sort implementation in 32-bit x86 Assembly (NASM) with C interface.",
-      "tech": ["x86 Assembly", "C", "NASM"],
-      "image": "/images/placeholder.png",
-      "category": "academic",
-      "lines": 150,
-      "time": "1 week",
-      "details": "Implementation: Wrote complete binary sort in x86 Assembly. Testing: Used C interface with GCC multilib for validation. Focus: Struct-based data handling and low-level optimization techniques."
-    },
-    {
-      "id": "multi-room-chat",
-      "title": "Multi-Room Chat Application",
-      "description": "Java chat app with multiple rooms, real-time calling, encryption, and built-in torrenting.",
-      "tech": ["Java", "JavaFX", "Multithreading", "Torrenting", "Networking"],
-      "image": "/images/placeholder.png",
-      "category": "web",
-      "lines": 4000,
-      "time": "3 weeks",
-      "details": "Features: Multiple chat rooms, live message broadcasting, real-time voice calling, end-to-end encryption, integrated torrenting system for file sharing. Tech: JavaFX GUI, multithreading for concurrent users. Learning: Network programming, encryption, P2P protocols."
-    },
-    {
-      "id": "laser-tag-game",
-      "title": "Laser Tag Game",
-      "description": "Mobile laser tag game using computer vision for player detection and hit tracking.",
-      "tech": ["JavaScript", "Computer Vision", "Networking", "Internship"],
-      "image": "/images/placeholder.png",
-      "category": "game",
-      "lines": 1800,
-      "time": "1 week",
-      "details": "Features: Mobile-based gameplay, camera feed integration, real-time player detection, hit detection and tagging system. Tech: Computer vision algorithms, smartphone camera API. Learning: Mobile development, computer vision, real-time processing."
-    },
-    {
-      "id": "pose-detection-app",
-      "title": "Pose Detection React App",
-      "description": "Browser-based human pose detection app using TensorFlow.js with cross-browser compatibility.",
-      "tech": ["React", "TensorFlow.js", "Machine Learning"],
-      "image": "/images/placeholder.png",
-      "category": "web",
-      "lines": 600,
-      "time": "3 days",
-      "details": "Features: Real-time human pose detection in browser, cross-platform compatibility. Challenges: Debugged Safari-specific compatibility issues. Tech: TensorFlow.js for ML, React for UI. Learning: Machine learning integration, browser APIs, performance optimization."
+      "id": "repo-skill-finder",
+      "title": "repo-skill-finder",
+      "description": "Scans a repo's tech stack, matches it against a skills registry, flags what's missing, and generates the missing skills.",
+      "tech": [
+        "Agentic tooling",
+        "Python"
+      ]
     },
     {
       "id": "pdf-automation-suite",
-      "title": "PDF Automation Suite (CS344 - Praelexis)",
-      "description": "Suite of Python tools for automated PDF form detection, filling, and response placement.",
-      "tech": ["Python", "TTS", "PDF Processing", "LLM"],
-      "image": "/images/placeholder.png",
-      "category": "academic",
-      "lines": 3500,
-      "time": "10 weeks",
-      "details": "Company Project: Developed for Praelexis in CS344. Components: 1) Input Field Detection - Detects underlined/blank fields and prompts for input, auto-saves to /Filled/ directory. 2) PDF Response Writer - Precisely places typed responses with maintained text alignment, font, and spacing. 3) Form Field Locator - OpenCV-based visual detection of underlines and input zones with bounding box extraction. Learning: PDF manipulation, computer vision, automation workflows."
+      "title": "PDF automation suite",
+      "meta": "CS344, for Praelexis",
+      "description": "Three tools for filling PDF forms nobody made fillable: OpenCV finds the underlines and blank fields, a writer places typed responses without breaking alignment or spacing, and the whole thing saves out automatically.",
+      "tech": [
+        "Python",
+        "OpenCV",
+        "PDF"
+      ]
+    },
+    {
+      "id": "multi-room-chat",
+      "title": "Multi-room chat application",
+      "description": "A Java chat app with multiple rooms, live broadcasting, real-time voice calling, end-to-end encryption and integrated torrenting for file sharing. Mostly an exercise in networking and threading.",
+      "tech": [
+        "Java",
+        "JavaFX",
+        "Multithreading",
+        "Networking"
+      ]
+    },
+    {
+      "id": "laser-tag-game",
+      "title": "Laser tag",
+      "meta": "Internship",
+      "description": "Mobile laser tag that uses the phone camera and computer vision to detect players and register hits.",
+      "tech": [
+        "JavaScript",
+        "Computer vision"
+      ]
+    },
+    {
+      "id": "appa-mod",
+      "title": "Appa Mod",
+      "description": "A Forge 1.20.1 Minecraft mod, co-developed, adding a rideable flying mob.",
+      "tech": [
+        "Java",
+        "Forge"
+      ]
+    },
+    {
+      "id": "file-converter",
+      "title": "File converter",
+      "description": "A PyQt6 desktop app for bulk conversions — folders of images into a PDF, and similar — with GitHub Actions building the macOS binaries.",
+      "tech": [
+        "Python",
+        "PyQt6",
+        "PyMuPDF"
+      ]
+    },
+    {
+      "id": "pose-detection-app",
+      "title": "Pose detection in the browser",
+      "description": "Real-time human pose detection with TensorFlow.js, including the Safari-specific debugging that came with it.",
+      "tech": [
+        "React",
+        "TensorFlow.js"
+      ],
+      "meta": "Internship"
+    },
+    {
+      "id": "binary-sort-assembly",
+      "title": "Binary sort in x86 assembly",
+      "meta": "University",
+      "description": "A full binary sort written in 32-bit NASM with a C interface for testing, working with structs and low-level optimisation.",
+      "tech": [
+        "x86 Assembly",
+        "C",
+        "NASM"
+      ]
+    },
+    {
+      "id": "airrace",
+      "title": "AirRace",
+      "meta": "University",
+      "description": "A strategic card game with an AI solver. Got 120%, including full marks for the AI.",
+      "tech": [
+        "Python"
+      ]
     }
   ],
-  "stats": {
-    "yearsCoding": "5+",
-    "projectsBuilt": "20+",
-    "languages": "8+"
+  "earlier": "Before that, the usual learning projects — a Pokémon clone in vanilla JS with a map built in Tiled, solitaire and blackjack in Pygame, snake, an eye tracker that follows the cursor.",
+  "education": [
+    {
+      "id": "stellenbosch-honours",
+      "degree": "BSc Honours, Computer Science",
+      "institution": "Stellenbosch University",
+      "year": "2026"
+    },
+    {
+      "id": "stellenbosch",
+      "degree": "BSc Computer Science",
+      "institution": "Stellenbosch University",
+      "year": "2023–25"
+    },
+    {
+      "id": "stellenberg",
+      "degree": "NSC, IEB",
+      "institution": "Stellenberg High School — 88.5% average, seven distinctions",
+      "year": "2019–22"
+    }
+  ],
+  "awards": [
+    {
+      "title": "Second Top Undergraduate Student, Computer Science",
+      "institution": "Stellenbosch University",
+      "year": "2025"
+    },
+    {
+      "title": "Top Senior Student",
+      "institution": "Helshoogte Residence",
+      "year": "2025"
+    },
+    {
+      "title": "Top 2nd Year Computer Science",
+      "institution": "Stellenbosch University",
+      "year": "2024"
+    },
+    {
+      "title": "Dux Student",
+      "institution": "Helshoogte Residence",
+      "year": "2024"
+    },
+    {
+      "title": "Dux Student",
+      "institution": "Helshoogte Residence",
+      "year": "2023"
+    }
+  ],
+  "skills": {
+    "Languages": [
+      "Python",
+      "JavaScript",
+      "Java",
+      "SQL",
+      "C",
+      "Haskell",
+      "x86 Assembly"
+    ],
+    "Tools": [
+      "Ollama",
+      "Docker",
+      "Linux",
+      "Git",
+      "PBS Pro",
+      "Singularity",
+      "GitHub Actions",
+      "Streamlit",
+      "LaTeX"
+    ]
   }
 }
